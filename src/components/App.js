@@ -7,8 +7,8 @@ function App(){
     return (
     <BrowserRouter>
         <Routes basename={process.env.PUBLIC_URL}>
-            <Route path="/vanilla-redux/" element = {<Home />}></Route>
-            <Route path="/:id" element = {<Detail />}></Route>
+            <Route path="/vanilla-redux" element = {<Home />}></Route>
+            <Route path="/vanilla-redux/:id" element = {<Detail />}></Route>
         </Routes>
     </BrowserRouter>
     )
