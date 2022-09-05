@@ -12,7 +12,7 @@ function ToDo({ text, id }) {
 
   return (
     <li>
-      <Link to={`/vanilla-redux/${id}`}>{text}</Link>
+      <Link to={`/${id}`}>{text}</Link>
       <button id={id} onClick={() => onClick(id)}>
         ❌
       </button>

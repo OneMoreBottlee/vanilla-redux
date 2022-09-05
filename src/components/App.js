@@ -5,10 +5,10 @@ import Detail from "../routes/Detail";
 
 function App(){
     return (
-    <BrowserRouter>
-        <Routes basename={process.env.PUBLIC_URL}>
-            <Route path="/vanilla-redux" element = {<Home />}></Route>
-            <Route path="/vanilla-redux/:id" element = {<Detail />}></Route>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+            <Route path="/" element = {<Home />}></Route>
+            <Route path="/:id" element = {<Detail />}></Route>
         </Routes>
     </BrowserRouter>
     )
